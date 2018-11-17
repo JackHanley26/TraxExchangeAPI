@@ -1,0 +1,20 @@
+{
+  "name": "trax_exchange_api",
+  "version": "1.0.0",
+  "description": "Express API Server for Trax Exchange Application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jack Hanley",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "googleapis": "^35.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-google": "^0.11.0",
+    "winston": "^3.1.0"
+  }
+}
