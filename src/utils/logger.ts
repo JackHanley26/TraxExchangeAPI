@@ -1,14 +1,14 @@
-import winston from 'winston';
-import fs from 'fs';
+import * as winston from 'winston';
+import {existsSync, mkdirSync} from 'fs';
 
-const logFolder = "./logs";
+const logFolder = './logs';
 
 // Create; load log path
-if (!fs.existsSync(logFolder))
-  fs.mkdirSync(logFolder);
+if (!existsSync(logFolder)) {
+  mkdirSync(logFolder);
+}
 
-
-export const logger = winston.createLogger({
+const logger = winston.createLogger({
   level: 'info',
   format: winston.format.json(),
   transports: [
@@ -22,3 +22,5 @@ if (process.env.NODE_ENV !== 'production') {
     format: winston.format.simple()
   }));
 }
+
+export default logger;

@@ -50,6 +50,6 @@ Thumbs.db
 
 # Certs #
 #########
-/config/certs/*.key
-/config/certs/*.cert
+/src/config/certs/*.key
+/src/config/certs/*.cert
 
