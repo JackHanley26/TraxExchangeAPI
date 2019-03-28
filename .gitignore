@@ -53,3 +53,9 @@ Thumbs.db
 /src/config/certs/*.key
 /src/config/certs/*.cert
 
+
+# Compiled code
+/src/**/*.js
+/src/**/*.js.map
+/test/**/*.js
+/test/**/*.js.map
