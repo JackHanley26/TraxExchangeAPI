@@ -5,7 +5,7 @@
   "main": "src/index.ts",
   "scripts": {
     "start": "node src/index.js",
-    "test": "mocha test/unit/**/*.t",
+    "test": "",
     "cover": "nyc mocha test/unit/**/*.ts",
     "lint": "tslint --project tsconfig.json src/**/*.ts"
   },
